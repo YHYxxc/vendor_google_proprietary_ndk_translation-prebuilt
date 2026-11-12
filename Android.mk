@@ -1,18 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ndk_translation_program_runner_binfmt_misc
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := EXECUTABLES
-LOCAL_CHECK_ELF_FILES := false
-LOCAL_SRC_FILES := prebuilts/bin/ndk_translation_program_runner_binfmt_misc
-LOCAL_POST_INSTALL_CMD := mkdir -p $(TARGET_OUT)/bin/arm; \
-						  rsync -av -l $(LOCAL_PATH)/prebuilts/bin/arm $(TARGET_OUT)/bin; \
-						  mkdir -p $(TARGET_OUT)/lib/arm; \
-						  rsync -av -l $(LOCAL_PATH)/prebuilts/lib/* $(TARGET_OUT)/lib
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ndk_translation_program_runner_binfmt_misc_arm64
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
