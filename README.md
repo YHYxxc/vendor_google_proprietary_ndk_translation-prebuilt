@@ -2,7 +2,7 @@
 
 Android images fingerprints:
 
-google/sdk_gphone64_x86_64/emu64xa:16/BE4B.251210.005/14574095:userdebug/dev-keys
+google/generic_system_google/generic:17/CE2A.260420.051.A3/16571990:userdebug/dev-keys
 
 ## How to include it in your Android-x86 build :
 To include it, cherry-pick or make these commit as a reference:
