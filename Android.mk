@@ -13,12 +13,12 @@ LOCAL_POST_INSTALL_CMD := mkdir -p $(TARGET_OUT)/bin/arm64; \
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ndk_translation.rc
+LOCAL_MODULE := berberis_arm_or_arm64.rc
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_RELATIVE_PATH := init
-LOCAL_SRC_FILES := prebuilts/etc/init/ndk_translation.rc
+LOCAL_SRC_FILES := prebuilts/etc/init/berberis_arm_or_arm64.rc
 LOCAL_POST_INSTALL_CMD := cp -r $(LOCAL_PATH)/prebuilts/etc/* $(TARGET_OUT)/etc
 include $(BUILD_PREBUILT)
 
