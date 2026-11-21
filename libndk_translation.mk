@@ -10,5 +10,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
 	ndk_translation_program_runner_binfmt_misc_arm64 \
-	ndk_translation.rc
+	berberis_arm_or_arm64.rc
 
